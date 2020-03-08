@@ -43,7 +43,7 @@ class cleanco(object):
 		business_name = " ".join(business_name.split())
 
 		# Get rid of all trailing non-letter symbols except ['.', ')']
-		match = re.search(r'[^\.\(\w]+$', business_name, flags=re.UNICODE)
+		match = re.search(r'[^\.\)\w]+$', business_name, flags=re.UNICODE)
 		if match is not None:
 			business_name = business_name[:match.span()[0]]
 
