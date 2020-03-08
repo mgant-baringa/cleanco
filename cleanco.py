@@ -42,8 +42,8 @@ class cleanco(object):
 		# Get rid of extra prefix-, suffix- & in-between spaces
 		business_name = " ".join(business_name.split())
 
-		# Get rid of all trailing non-letter symbols except '.'
-		match = re.search(r'[^\.\w]+$', business_name, flags=re.UNICODE)
+		# Get rid of all trailing non-letter symbols except ['.', ')']
+		match = re.search(r'[^\.\(\w]+$', business_name, flags=re.UNICODE)
 		if match is not None:
 			business_name = business_name[:match.span()[0]]
 
