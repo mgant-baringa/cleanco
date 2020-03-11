@@ -82,10 +82,10 @@ class cleanco(object):
 		for item in suffix_sort:
 			if suffix:
 				if loname.endswith(" " + item):
-					start = loname.find(item)
 					end = len(item)
 					name = name[0:-end-1]
 					name = self.string_stripper(name)
+					loname = name.lower()
 					if multi==False:
 						break
 			if prefix:
@@ -99,6 +99,7 @@ class cleanco(object):
 					start = loname.find(term)
 					end = start + len(term)
 					name = name[:start] + " " + name[end:]
+					loname = name.lower()
 					if multi==False:
 						break
 
