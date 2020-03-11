@@ -27,6 +27,7 @@ all_sorted = sorted_types + sorted_countries
 suffix_sort = []
 for item in all_sorted:
 	suffix_sort.append(item[1])
+suffix_sort = list(set(suffix_sort))
 suffix_sort = sorted(suffix_sort, key=lambda part: len(part), reverse=True)
 
 
