@@ -34,7 +34,7 @@ terms_by_type = {
    'Mutual Fund': ['sicav'],
    'No Liability': ['nl'],
    'Non-Profit': ['vzw', 'ses.', 'gte.'],
-   'Private Company': ['private', 'pte', 'xk'],
+   'Private Company': ['pte', 'xk'],
    'Professional Corporation': ['p.c.', 'vof', 'snc'],
    'Professional Limited Liability Company': ['pllc', 'p.l.l.c.'],
    'Sole Proprietorship': ['e.u.', 's.p.', 't:mi', 'tmi', 'e.v.', 'e.c.', 'et', 'obrt',
